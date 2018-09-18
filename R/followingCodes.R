@@ -26,7 +26,7 @@ followingCodes <- function (tdsc,
         v <- codelist
         x <- c(p[j,], k)
         f <- which(rowSums(mapply('==',
-                                  shift(v, type = 'lead', n = 0:(length(x) - 1)),
+                                  data.table::shift(v, type = 'lead', n = 0:(length(x) - 1)),
                                   x)
         ) == length(x))
         if (length(f) > 0) {
