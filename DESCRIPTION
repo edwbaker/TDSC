@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("Ed", "Baker", email = "ed@ebaker.me.uk", role = c("aut", "cre"))
 Description: Time domain signal coding in R.
 Depends: R (>= 3.4.3)
-License: What license is it under?
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0.9000
