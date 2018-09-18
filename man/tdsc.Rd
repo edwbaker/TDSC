@@ -15,7 +15,7 @@ tdsc(wave, lag = 1, coding_matrix = NULL, plot = FALSE, max_D = 25)
 
 \item{plot}{If TRUE plots the workings of the coding algorithm}
 
-\item{D_max}{The maximum Duration to code}
+\item{max_D}{The maximum Duration to code}
 }
 \description{
 Performs Time Domain Signal Coding on a Wave object

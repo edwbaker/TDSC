@@ -4,7 +4,7 @@
 #' @param wave A Wave object
 #' @param lag The lag used to create the A-matrix
 #' @param coding_matrix A matrix used to code the Duration-Shape pairs
-#' @param D_max The maximum Duration to code
+#' @param max_D The maximum Duration to code
 #' @param plot If TRUE plots the workings of the coding algorithm
 #' @keywords TDSC
 #' @importFrom graphics abline
