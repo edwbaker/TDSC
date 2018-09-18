@@ -43,6 +43,9 @@ followingCodes <- function (tdsc,
   colnames(fs) <- c(paste0(rep("Code", depth+1), 1:(depth+1)), "Freq")
   
   if (plot=="alluvial") {
+    if (!require(alluvial)) {
+      stop()
+    }
     f <- as.data.frame(fs)
     alluvial::alluvial( f[,1:(depth+1)], freq=f$Freq, border=NA,
                         hide = f$Freq < stats::quantile(f$Freq, .50),
