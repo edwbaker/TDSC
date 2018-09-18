@@ -10,8 +10,7 @@
 #'
 #' @keywords TDSC CodingMatrix
 #'
-#' @references Moore et al. (2013) Genetics 195:1077-1086
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
+#' @references Chesmore, E David (2001). “Application of time domain signal coding and artificial neural networks to passive acoustical identification of animals”. In: Applied Acoustics 62.12, pp. 1359–1374.
 #'
 #' @source \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
 #'
