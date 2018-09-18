@@ -7,6 +7,7 @@
 #' @param D_max The maximum Duration to code
 #' @param plot If TRUE plots the workings of the coding algorithm
 #' @keywords TDSC
+#' @importFrom graphics abline
 #' @export
 #' @examples
 #' tdsc()
@@ -127,7 +128,7 @@ tdsc <- function(
     }
   }
   
-  tdsc <- new("tdsc", 
+  tdsc <- methods::new("tdsc", 
               raw=cbind(D_list, S_list),
               codelist=codelist,
               c_matrix=coding_matrix,
