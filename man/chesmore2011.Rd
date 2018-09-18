@@ -12,15 +12,14 @@
 data(chesmore2011)
 }
 \description{
-Coding matrix used by....
+Coding matrix used for Orthoptera.
 }
 \examples{
 data(chesmore2011)
 t <- tdsc(wave, c_matrix=chesmore2011)
 }
 \references{
-Moore et al. (2013) Genetics 195:1077-1086
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
+Chesmore, E David (2001). “Application of time domain signal coding and archecktificial neural networks to passive acoustical identification of animals”. In: Applied Acoustics 62.12, pp. 1359–1374.
 }
 \keyword{CodingMatrix}
 \keyword{TDSC}

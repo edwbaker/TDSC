@@ -1,6 +1,6 @@
 #' Coding Matrix from Chesmore (2011)
 #'
-#' Coding matrix used by....
+#' Coding matrix used for Orthoptera.
 #'
 #' @docType data
 #'
@@ -10,7 +10,7 @@
 #'
 #' @keywords TDSC CodingMatrix
 #'
-#' @references Chesmore, E David (2001). “Application of time domain signal coding and artificial neural networks to passive acoustical identification of animals”. In: Applied Acoustics 62.12, pp. 1359–1374.
+#' @references Chesmore, E David (2001). “Application of time domain signal coding and archecktificial neural networks to passive acoustical identification of animals”. In: Applied Acoustics 62.12, pp. 1359–1374.
 #'
 #' @source \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
 #'

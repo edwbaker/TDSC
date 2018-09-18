@@ -5,9 +5,6 @@
 \alias{farr2007}
 \title{Coding Matrix from Farr (2007)}
 \format{Matrix}
-\source{
-\href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
-}
 \usage{
 data(farr2007)
 }
@@ -19,8 +16,7 @@ data(farr2007)
 t <- tdsc(wave, c_matrix=farr2007)
 }
 \references{
-Moore et al. (2013) Genetics 195:1077-1086
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
+Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of York.
 }
 \keyword{CodingMatrix}
 \keyword{TDSC}
