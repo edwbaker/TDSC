@@ -1,7 +1,7 @@
 #' Following Codes
 #' #'
 #' Create sequences of codes that follow each other from time domain signal analysis
-#' @param codelist codelist form a TDSC object
+#' @param tdsc A TDSC object
 #' @param depth The length of the sequence of codes to search for
 #' @param min_code The minimum value of code to include in sequence
 #' @param max_code The maximum value of code to include in sequence
