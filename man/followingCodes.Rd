@@ -10,6 +10,8 @@ followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
   plot = F)
 }
 \arguments{
+\item{tdsc}{A TDSC object}
+
 \item{depth}{The length of the sequence of codes to search for}
 
 \item{min_code}{The minimum value of code to include in sequence}
@@ -17,8 +19,6 @@ followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
 \item{max_code}{The maximum value of code to include in sequence}
 
 \item{plot}{If "alluvial" plots the found sequences in a river plot}
-
-\item{codelist}{codelist form a TDSC object}
 }
 \description{
 Following Codes

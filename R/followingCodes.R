@@ -43,7 +43,7 @@ followingCodes <- function (tdsc,
   colnames(fs) <- c(paste0(rep("Code", depth+1), 1:(depth+1)), "Freq")
   
   if (plot=="alluvial") {
-    if (!require(alluvial)) {
+    if (!requireNamespace(alluvial, quietly=TRUE)) {
       stop()
     }
     f <- as.data.frame(fs)
