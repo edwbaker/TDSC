@@ -11,6 +11,6 @@ cache: packages
 r_packages: 
   - testthat
   - roxygen2
-
+  - methods
 after_success:
   - Rscript -e 'devtools::install();devtools::test()'
