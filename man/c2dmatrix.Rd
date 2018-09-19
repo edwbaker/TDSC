@@ -4,10 +4,10 @@
 \alias{c2dmatrix}
 \title{Convert a coding matrix to a distributed matrix}
 \usage{
-c2dmatrix(input, sf = 100)
+c2dmatrix(t, sf = 100)
 }
 \arguments{
-\item{input}{A tdsc object or a matrix}
+\item{t}{A tdsc object or a matrix}
 
 \item{sf}{The scaling factor}
 }
@@ -15,7 +15,7 @@ c2dmatrix(input, sf = 100)
 Identifies unused codes across multiple S-matricies
 }
 \examples{
-c2dmatrix()
+c2dmatrix(as.matrix(c(1,2,3,4), nrow=2))
 
 }
 \keyword{TDSC}

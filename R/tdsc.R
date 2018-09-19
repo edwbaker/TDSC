@@ -10,8 +10,11 @@
 #' @importFrom graphics abline
 #' @export
 #' @examples
-#' tdsc()
-#' 
+#' library(tuneR)
+#' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
+#' t <- tdsc(wave)
+
+
 tdsc <- function(
   wave,
   lag=1,
@@ -46,7 +49,7 @@ tdsc <- function(
     #Maximum code assigned in the matrix
     max_code <- current_code - 1
   } else {
-    max_code <- max(coding_matrix)
+    max_code <- max(coding_matrix, na.rm=TRUE)
     multip_matrix <- coding_matrix
     multip_matrix[multip_matrix > 0] <- 1
   }
@@ -90,7 +93,7 @@ tdsc <- function(
   code <- vector(mode="integer", length=v_length)
   
   #b_matrix matrix in shape of coding matrix
-  b_matrix <- matrix(data=0, nrow=max_D, ncol=max_S)
+  b_matrix <- matrix(data=0, nrow=nrow(coding_matrix), ncol=ncol(coding_matrix))
   
   #Populate code vector and b_matrix matrix (loop over epochs)
   for (i in 1:v_length) {
@@ -109,7 +112,7 @@ tdsc <- function(
       S_list[i] <- NA
     }
   }
-  colnames(b_matrix) <- 0:(max_S - 1)
+  colnames(b_matrix) <- 0:(ncol(b_matrix) - 1)
   
   codelist <- code
   
