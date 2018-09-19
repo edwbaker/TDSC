@@ -3,6 +3,8 @@
 export(c2dmatrix)
 export(emptyBands)
 export(followingCodes)
+export(sample_waveform)
 export(tdsc)
 exportClasses(tdsc)
 importFrom(graphics,abline)
+importFrom(graphics,plot)
