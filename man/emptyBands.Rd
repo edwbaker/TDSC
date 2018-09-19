@@ -10,7 +10,7 @@ emptyBands(...)
 \item{...}{Two or more TDSC objects}
 }
 \description{
-Identifies unused codes across multiple S-matricies
+Identifies unused codes across multiple S-matricies. Unused bands can be used to reduce the codebook as in Stammers (2011).
 }
 \examples{
 library(tuneR)
@@ -18,5 +18,8 @@ wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 t <- tdsc(wave)
 emptyBands(t,t)
 
+}
+\references{
+Stammers (2011) “Audio Event Classification for Urban Soundscape Analysis”. PhD thesis. University of York.
 }
 \keyword{TDSC}

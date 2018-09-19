@@ -12,10 +12,13 @@ c2dmatrix(t, sf = 100)
 \item{sf}{The scaling factor}
 }
 \description{
-Identifies unused codes across multiple S-matricies
+This function converts a coding matrix of any kind into a distributed matrix as described in Farr (2007).
 }
 \examples{
 c2dmatrix(as.matrix(c(1,2,3,4), nrow=2))
 
+}
+\references{
+Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of York.
 }
 \keyword{TDSC}

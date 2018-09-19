@@ -2,9 +2,7 @@
 % Please edit documentation in R/followingCodes.R
 \name{followingCodes}
 \alias{followingCodes}
-\title{Following Codes
-#'
-Create sequences of codes that follow each other from time domain signal analysis}
+\title{Following Codes}
 \usage{
 followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
   plot = F)
@@ -21,9 +19,7 @@ followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
 \item{plot}{If "alluvial" plots the found sequences in a river plot}
 }
 \description{
-Following Codes
-#'
-Create sequences of codes that follow each other from time domain signal analysis
+Identifies sequences of codes that follow each other from time domain signal analysis, and optionally plots them as a Sankey diagram.
 }
 \examples{
 library(tuneR)

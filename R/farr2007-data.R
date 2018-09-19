@@ -1,6 +1,6 @@
 #' Coding Matrix from Farr (2007)
 #'
-#' Coding matrix used by Farr in his 2007 PhD thesis.
+#' Coding matrix used by Farr (2007).
 #'
 #' @docType data
 #'
@@ -10,7 +10,7 @@
 #'
 #' @keywords TDSC CodingMatrix
 #'
-#' @references Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of York.
+#' @references Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of Hull.
 #'
 #' @examples
 #' library(tuneR)

@@ -7,7 +7,5 @@ test_that("check known missing bands in example file with chesmore2011 coding ma
   t <- tdsc(wave, coding_matrix = chesmore2011)
   b <- emptyBands(t,t)
   expect_equal(b$missing, 11)
-  
-  expect_equal(1,1)
 })
 

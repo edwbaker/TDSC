@@ -18,7 +18,7 @@ tdsc(wave, lag = 1, coding_matrix = NULL, plot = FALSE, max_D = 25)
 \item{max_D}{The maximum Duration to code}
 }
 \description{
-Performs Time Domain Signal Coding on a Wave object
+Performs Time Domain Signal Coding on a Wave object calculating the S-matrix and  A-matrix.
 }
 \examples{
 library(tuneR)

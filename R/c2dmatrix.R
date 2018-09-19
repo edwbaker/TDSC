@@ -1,10 +1,12 @@
 #' Convert a coding matrix to a distributed matrix
 #'
-#' Identifies unused codes across multiple S-matricies
+#' This function converts a coding matrix of any kind into a distributed matrix as described in Farr (2007).
 #' 
 #' @param t A tdsc object or a matrix
 #' @param sf The scaling factor
 #' @keywords TDSC
+#' @references Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of York.
+
 #' @export
 #' @examples
 #' c2dmatrix(as.matrix(c(1,2,3,4), nrow=2))

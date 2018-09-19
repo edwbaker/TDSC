@@ -1,6 +1,7 @@
 #' Following Codes
-#' #'
-#' Create sequences of codes that follow each other from time domain signal analysis
+#' 
+#' Identifies sequences of codes that follow each other from time domain signal analysis, and optionally plots them as a Sankey diagram.
+#' 
 #' @param tdsc A TDSC object
 #' @param depth The length of the sequence of codes to search for
 #' @param min_code The minimum value of code to include in sequence

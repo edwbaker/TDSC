@@ -1,6 +1,7 @@
 #' Time Domain Signal Coding
 #'
-#' Performs Time Domain Signal Coding on a Wave object
+#' Performs Time Domain Signal Coding on a Wave object calculating the S-matrix and  A-matrix.
+#' 
 #' @param wave A Wave object
 #' @param lag The lag used to create the A-matrix
 #' @param coding_matrix A matrix used to code the Duration-Shape pairs

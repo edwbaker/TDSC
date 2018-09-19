@@ -9,7 +9,7 @@
 data(farr2007)
 }
 \description{
-Coding matrix used by Farr in his 2007 PhD thesis.
+Coding matrix used by Farr (2007).
 }
 \examples{
 library(tuneR)
@@ -18,7 +18,7 @@ data(farr2007)
 t <- tdsc(wave, coding_matrix=farr2007)
 }
 \references{
-Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of York.
+Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of Hull.
 }
 \keyword{CodingMatrix}
 \keyword{TDSC}
