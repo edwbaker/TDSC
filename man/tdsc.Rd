@@ -21,7 +21,8 @@ tdsc(wave, lag = 1, coding_matrix = NULL, plot = FALSE, max_D = 25)
 Performs Time Domain Signal Coding on a Wave object
 }
 \examples{
-tdsc()
-
+library(tuneR)
+wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
+t <- tdsc(wave)
 }
 \keyword{TDSC}

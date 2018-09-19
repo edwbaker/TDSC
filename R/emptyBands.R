@@ -6,7 +6,10 @@
 #' @keywords TDSC
 #' @export
 #' @examples
-#' emptyBands()
+#' library(tuneR)
+#' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
+#' t <- tdsc(wave)
+#' emptyBands(t,t)
 #' 
 emptyBands <- function(...) {
   input <- list(...)

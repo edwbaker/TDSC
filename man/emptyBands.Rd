@@ -13,7 +13,10 @@ emptyBands(...)
 Identifies unused codes across multiple S-matricies
 }
 \examples{
-emptyBands()
+library(tuneR)
+wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
+t <- tdsc(wave)
+emptyBands(t,t)
 
 }
 \keyword{TDSC}

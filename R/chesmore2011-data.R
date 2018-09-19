@@ -15,6 +15,8 @@
 #' @source \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
 #'
 #' @examples
+#' library(tuneR)
+#' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 #' data(chesmore2011)
-#' t <- tdsc(wave, c_matrix=chesmore2011)
+#' t <- tdsc(wave, coding_matrix=chesmore2011)
 "chesmore2011"

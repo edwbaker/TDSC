@@ -13,6 +13,8 @@
 #' @references Farr (2007) “Automated Bioacoustic Identification of Statutory Quarantined Insect Pests”. PhD thesis. University of York.
 #'
 #' @examples
+#' library(tuneR)
+#' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 #' data(farr2007)
-#' t <- tdsc(wave, c_matrix=farr2007)
+#' t <- tdsc(wave, coding_matrix=farr2007)
 "farr2007"

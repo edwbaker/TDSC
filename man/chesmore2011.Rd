@@ -15,8 +15,10 @@ data(chesmore2011)
 Coding matrix used for Orthoptera.
 }
 \examples{
+library(tuneR)
+wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 data(chesmore2011)
-t <- tdsc(wave, c_matrix=chesmore2011)
+t <- tdsc(wave, coding_matrix=chesmore2011)
 }
 \references{
 Chesmore, E David (2001). “Application of time domain signal coding and archecktificial neural networks to passive acoustical identification of animals”. In: Applied Acoustics 62.12, pp. 1359–1374.
