@@ -26,7 +26,10 @@ Following Codes
 Create sequences of codes that follow each other from time domain signal analysis
 }
 \examples{
-tdsc()
+library(tuneR)
+wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
+t <- tdsc(wave)
+followingCodes(t)
 
 }
 \keyword{TDSC}
