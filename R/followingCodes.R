@@ -9,7 +9,10 @@
 #' @keywords TDSC
 #' @export
 #' @examples
-#' tdsc()
+#' library(tuneR)
+#' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
+#' t <- tdsc(wave)
+#' followingCodes(t)
 #' 
 followingCodes <- function (tdsc, 
                              depth=2, 
@@ -43,7 +46,7 @@ followingCodes <- function (tdsc,
   colnames(fs) <- c(paste0(rep("Code", depth+1), 1:(depth+1)), "Freq")
   
   if (plot=="alluvial") {
-    if (!require(alluvial)) {
+    if (!requireNamespace("alluvial", quietly=TRUE)) {
       stop()
     }
     f <- as.data.frame(fs)
