@@ -7,7 +7,7 @@
 #' @keywords TDSC
 #' @export
 #' @examples
-#' c2dmatrix()
+#' c2dmatrix(1)
 #' 
 c2dmatrix <- function(input, 
                       sf=100
