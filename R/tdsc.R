@@ -101,7 +101,7 @@ tdsc <- function(
     i2 <- zc[[i+1]]
     D <- i2 - i1
     S <- sum(neg_maxima[i1:i2]) + sum(pos_minima[i1:i2])
-    if (D <= max_D & S <= max_S) {
+    if (D <= nrow(coding_matrix) & S <= ncol(coding_matrix)+1) {
       b_matrix[D,S+1] <- b_matrix[D,S+1] + (1 * multip_matrix[D,S+1])
       code[i] <- coding_matrix[D, S+1]
       D_list[i] <- D
