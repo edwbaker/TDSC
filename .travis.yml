@@ -7,7 +7,9 @@ r:
   - devel
 sudo: false
 cache: packages
-r_packages: testthat
+r_packages: 
+  - testthat
+  - roxygen2
 
 after_success:
   - Rscript -e 'devtools::install();devtools::test()'
