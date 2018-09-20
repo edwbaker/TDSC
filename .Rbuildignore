@@ -4,3 +4,4 @@ LICENSE
 CODE_OF_CONDUCT.md
 ^.*\.DS_Store$
 ^\.travis\.yml$
+README.md
