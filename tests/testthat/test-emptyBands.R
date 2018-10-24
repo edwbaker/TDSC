@@ -1,5 +1,6 @@
+context("emptyBands.R")
 library(tuneR)
-context("empty bands")
+
 
 test_that("check known missing bands in example file with chesmore2011 coding matrix", {
   wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
