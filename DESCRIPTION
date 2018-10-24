@@ -12,5 +12,6 @@ Imports:
   data.table,
   methods
 Suggests:
-  tuneR,
-  alluvial
+    tuneR,
+    alluvial,
+    covr

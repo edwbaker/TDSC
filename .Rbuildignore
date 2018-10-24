@@ -1,3 +1,4 @@
+^codecov\.yml$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 LICENSE
@@ -5,3 +6,4 @@ CODE_OF_CONDUCT.md
 ^.*\.DS_Store$
 ^\.travis\.yml$
 README.md
+.covrignore
