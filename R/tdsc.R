@@ -18,11 +18,20 @@
 
 tdsc <- function(
   wave,
-  lag=1,
+  lag=1L,
   coding_matrix = NULL,
   plot=FALSE,
-  max_D=25
+  max_D=25L
 ) {
+  if (typeof(wave) != "S4" | class(wave) != "Wave") {
+    stop("wave must be a Wave object")
+  }
+  if (!is.numeric(lag) | !(lag == as.integer(lag))) {
+    stop("lag must be an integer")
+  }
+  if (!is.numeric(max_D) | !(max_D == as.integer(max_D))) {
+    stop("max_D must be an integer")
+  }
   #set max value for epoch shape based on physical limits of epoch duration
   max_S <- floor(max_D/2)+1
   

@@ -20,6 +20,9 @@ emptyBands <- function(...) {
   x <- c()
   y <- c()
   for (i in 1:length(input)) {
+    if (typeof(input[[i]]) != "S4" | class(input[[i]]) != "tdsc") {
+      stop("Inputs to emptyBands must be TDSC objects.")
+    }
     s_matrix <- input[[i]]@s_matrix
     x <- c(x, rep(i, length(s_matrix)))
     y <- c(y, as.numeric(rownames(s_matrix)))
