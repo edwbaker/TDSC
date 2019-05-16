@@ -22,5 +22,5 @@ setClass("tdsc",
            a_matrix="matrix",
            sample_count="numeric",
            epoch_count="numeric",
-           stdsc="numeric"
+           stdsc="list"
          ))

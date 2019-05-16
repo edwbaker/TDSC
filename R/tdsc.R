@@ -141,7 +141,9 @@ tdsc <- function(
     }
   }
   
-  stdsc <- vector(mode="integer", length=62)
+  stdsc <- list(
+    
+  )
   
   tdsc <- methods::new("tdsc", 
               raw=cbind(D_list, S_list),
