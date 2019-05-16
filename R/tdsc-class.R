@@ -8,6 +8,7 @@
 #' @slot a_matrix The A-matrix
 #' @slot sample_count The number of samples in the waveform
 #' @slot epoch_count The number of identified epochs
+#' @slot stdsc Statistical TDSC feature vector
 #' 
 #' @export
 #' 
@@ -20,5 +21,6 @@ setClass("tdsc",
            s_matrix="matrix",
            a_matrix="matrix",
            sample_count="numeric",
-           epoch_count="numeric"
+           epoch_count="numeric",
+           stdsc="numeric"
          ))
