@@ -119,6 +119,11 @@ tdsc <- function(
     S <- sum(neg_maxima[i1:i2]) + sum(pos_minima[i1:i2])
     stdsc_d[i] <- D
     stdsc_s[i] <- S
+    if (sum(wave@left[i1:i2]) > 0) {
+      positive[i] <- TRUE
+    } else {
+      positive[i] <- FALSE
+    }
     if (D <= nrow(coding_matrix) & S <= ncol(coding_matrix)+1) {
       b_matrix[D,S+1] <- b_matrix[D,S+1] + (1 * multip_matrix[D,S+1])
       code[i] <- coding_matrix[D, S+1]
@@ -129,15 +134,10 @@ tdsc <- function(
       D_list[i] <- NA
       S_list[i] <- NA
     }
-    if (sum(wave@left[i1:i2]) > 0) {
-      positive[i] <- TRUE
-    } else {
-      positive[i] <- FALSE
-    }
   }
   colnames(b_matrix) <- 0:(ncol(b_matrix) - 1)
   
-  codelist <- code
+  codelist <- c(codelist, code)
   
   s_matrix <-as.matrix(table(code))
   
