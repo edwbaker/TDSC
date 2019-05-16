@@ -25,5 +25,7 @@ An S4 class to hold resuts from TDSC
 \item{\code{sample_count}}{The number of samples in the waveform}
 
 \item{\code{epoch_count}}{The number of identified epochs}
+
+\item{\code{stdsc}}{Statistical TDSC feature vector}
 }}
 

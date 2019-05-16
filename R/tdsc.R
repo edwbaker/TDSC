@@ -9,6 +9,8 @@
 #' @param plot If TRUE plots the workings of the coding algorithm
 #' @keywords TDSC
 #' @importFrom graphics abline
+#' @importFrom moments skewness
+#' @importFrom stats var
 #' @export
 #' @examples
 #' library(tuneR)
