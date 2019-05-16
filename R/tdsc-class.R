@@ -15,7 +15,7 @@
 setClass("tdsc", 
          slots=list(
            raw="matrix",
-           positive="logical",
+           positive="numeric",
            codelist="numeric",
            b_matrix="matrix",
            c_matrix="matrix",
