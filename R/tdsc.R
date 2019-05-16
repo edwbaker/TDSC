@@ -137,7 +137,7 @@ tdsc <- function(
   }
   colnames(b_matrix) <- 0:(ncol(b_matrix) - 1)
   
-  codelist <- c(codelist, code)
+  codelist <- code
   
   s_matrix <-as.matrix(table(code))
   
