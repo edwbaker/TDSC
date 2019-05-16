@@ -103,9 +103,11 @@ tdsc <- function(
   D_list <-vector(mode="integer", length=v_length)
   S_list <-vector(mode="integer", length=v_length)
   code <- vector(mode="integer", length=v_length)
+  positive <- vector(mode="logical", length=v_length)
 
   stdsc_d <- vector(mode="integer", length=v_length)
   stdsc_s <- vector(mode="integer", length=v_length)
+  
   #b_matrix matrix in shape of coding matrix
   b_matrix <- matrix(data=0, nrow=nrow(coding_matrix), ncol=ncol(coding_matrix))
   
@@ -126,6 +128,11 @@ tdsc <- function(
       code[i] <- NA
       D_list[i] <- NA
       S_list[i] <- NA
+    }
+    if (sum(wave@left[i1:i2]) > 0) {
+      positive[i] <- TRUE
+    } else {
+      positive[i] <- FALSE
     }
   }
   colnames(b_matrix) <- 0:(ncol(b_matrix) - 1)
@@ -151,11 +158,12 @@ tdsc <- function(
     "meanDuration" = mean(stdsc_d),
     "maxDuration" = max(stdsc_d),
     "varD" = var(stdsc_d),
-    "skewD" = "TODO"
+    "skewD" = skewness(stdsc_d)
   )
   
   tdsc <- methods::new("tdsc", 
               raw=cbind(D_list, S_list),
+              positive=positive,
               codelist=codelist,
               c_matrix=coding_matrix,
               b_matrix=b_matrix,
