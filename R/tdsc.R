@@ -141,6 +141,8 @@ tdsc <- function(
     }
   }
   
+  stdsc <- vector(mode="integer", length=62)
+  
   tdsc <- methods::new("tdsc", 
               raw=cbind(D_list, S_list),
               codelist=codelist,
@@ -149,7 +151,8 @@ tdsc <- function(
               s_matrix=s_matrix, 
               a_matrix=a_matrix,
               epoch_count=length(zc) -1,
-              sample_count=length(wave@left)
+              sample_count=length(wave@left),
+              stdsc=stdsc
   )
   
   return(tdsc)

@@ -4,7 +4,8 @@
 \alias{tdsc}
 \title{Time Domain Signal Coding}
 \usage{
-tdsc(wave, lag = 1, coding_matrix = NULL, plot = FALSE, max_D = 25)
+tdsc(wave, lag = 1L, coding_matrix = NULL, plot = FALSE,
+  max_D = 25L)
 }
 \arguments{
 \item{wave}{A Wave object}
