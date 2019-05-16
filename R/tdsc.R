@@ -101,7 +101,9 @@ tdsc <- function(
   D_list <-vector(mode="integer", length=v_length)
   S_list <-vector(mode="integer", length=v_length)
   code <- vector(mode="integer", length=v_length)
-  
+
+  stdsc_d <- vector(mode="integer", length=v_length)
+  stdsc_s <- vector(mode="integer", length=v_length)
   #b_matrix matrix in shape of coding matrix
   b_matrix <- matrix(data=0, nrow=nrow(coding_matrix), ncol=ncol(coding_matrix))
   
@@ -111,6 +113,8 @@ tdsc <- function(
     i2 <- zc[[i+1]]
     D <- i2 - i1
     S <- sum(neg_maxima[i1:i2]) + sum(pos_minima[i1:i2])
+    stdsc_d[i] <- D
+    stdsc_s[i] <- S
     if (D <= nrow(coding_matrix) & S <= ncol(coding_matrix)+1) {
       b_matrix[D,S+1] <- b_matrix[D,S+1] + (1 * multip_matrix[D,S+1])
       code[i] <- coding_matrix[D, S+1]
@@ -142,7 +146,10 @@ tdsc <- function(
   }
   
   stdsc <- list(
-    
+    "meanDuration" = mean(stdsc_d),
+    "maxDuration" = max(stdsc_d),
+    "varD" = var(stdsc_d),
+    "skewD" = "TODO"
   )
   
   tdsc <- methods::new("tdsc", 
