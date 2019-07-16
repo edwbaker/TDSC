@@ -6,12 +6,11 @@
 Time Domain Signal Coding in R
 
 ## Installation from CRAN
-```` 
+````R
 install.packages("tdsc")
 ````
 ## Installation from master
-````
+````R
 library(devtools)
 install_github("edwbaker/TDSC")
 ````
-
