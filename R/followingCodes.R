@@ -6,6 +6,7 @@
 #' @param depth The length of the sequence of codes to search for
 #' @param min_code The minimum value of code to include in sequence
 #' @param max_code The maximum value of code to include in sequence
+#' @param colourCode If plot is alluvial, colour all codes following this code
 #' @param plot If "alluvial" plots the found sequences in a river plot
 #' @keywords TDSC
 #' @export
@@ -14,11 +15,13 @@
 #' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 #' t <- tdsc(wave)
 #' followingCodes(t)
+#' followingCodes(t, colourCode=2,plot="alluvial")
 #' 
 followingCodes <- function (tdsc, 
                              depth=2, 
                              min_code=0, 
-                             max_code=10, 
+                             max_code=10,
+                             colourCode=1,
                              plot=F) {
   codelist <- tdsc@codelist
   fs <- c()
@@ -53,7 +56,7 @@ followingCodes <- function (tdsc,
     f <- as.data.frame(fs)
     alluvial::alluvial( f[,1:(depth+1)], freq=f$Freq, border=NA,
                         hide = f$Freq < stats::quantile(f$Freq, .50),
-                        col=ifelse( f$Code1 == 4,
+                        col=ifelse( f$Code1 == colourCode,
                                     "red", "grey") 
     )
   }
