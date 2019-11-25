@@ -1,10 +1,10 @@
-#' Coding Matrix from Chesmore (2011)
+#' Coding Matrix from Chesmore (2001)
 #'
 #' Coding matrix used for Orthoptera.
 #'
 #' @docType data
 #'
-#' @usage data(chesmore2011)
+#' @usage data(chesmore2001)
 #'
 #' @format Matrix
 #'
@@ -17,6 +17,6 @@
 #' @examples
 #' library(tuneR)
 #' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
-#' data(chesmore2011)
-#' t <- tdsc(wave, coding_matrix=chesmore2011)
-"chesmore2011"
+#' data(chesmore2001)
+#' t <- tdsc(wave, coding_matrix=chesmore2001)
+"chesmore2001"
