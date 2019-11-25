@@ -69,7 +69,7 @@ sample_waveform <- function(samples=3,
   }
   
 
-  do.call(plot, c(list(x=x_axis, y=waveform, type="l", xlim=xlim, ylim=ylim), ...))
+  p <- do.call(plot, c(list(x=x_axis, y=waveform, type="l", xlim=xlim, ylim=ylim), ...))
 
   if (start_zero) {
     points(x=sampling_points, y=points, pch=16)
@@ -78,4 +78,5 @@ sample_waveform <- function(samples=3,
   }
   abline(h=0, col="grey")
   abline(v=sampling_points, col="grey")
+  return(p)
 }
