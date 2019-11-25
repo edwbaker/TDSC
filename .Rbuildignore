@@ -7,3 +7,4 @@ CODE_OF_CONDUCT.md
 ^\.travis\.yml$
 README.md
 .covrignore
+^revdep$
