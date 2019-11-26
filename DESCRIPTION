@@ -16,4 +16,6 @@ Suggests:
     tuneR,
     alluvial,
     covr,
-    testthat
+    testthat,
+    devtools,
+    GA
