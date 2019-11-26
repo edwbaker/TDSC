@@ -1,6 +1,6 @@
 #' TDSC analysis comaptible with windowing
 #'
-#' Wrapper function for TDSC analysis that is compatible with the windowing function
+#' Wrapper function for TDSC analysis that is compatable with the windowing function
 #' of the package sonicscrewdriver.
 #' 
 #' @rdname tdsc.w

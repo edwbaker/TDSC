@@ -15,7 +15,7 @@ sample_waveform(samples = 3, fig_max_samples = NULL,
 
 \item{start_zero}{If TRUE the waveform starts at zero, if FALSE the zero crossings are between samples}
 
-\item{invert}{If TRUE the shapes are positive with positive minima, if FALSE shapes are neagtive with negative maxima}
+\item{invert}{If TRUE the shapes are positive with positive minima, if FALSE shapes are negative with negative maxima}
 
 \item{tdsc_shapes}{If TRUE the shapes correspond to TDSC shapes, if FALSE they resemble sampled sine waves}
 
@@ -24,7 +24,7 @@ sample_waveform(samples = 3, fig_max_samples = NULL,
 \item{...}{Further arguments to pass to plot.}
 }
 \description{
-Function to genertate images of sampled waveforms with shapes analysed by Time Domain Signal Coding.
+Function to generate images of sampled waveforms with shapes analysed by Time Domain Signal Coding.
 }
 \examples{
 sample_waveform()

@@ -21,7 +21,7 @@ data(chesmore2001)
 t <- tdsc(wave, coding_matrix=chesmore2001)
 }
 \references{
-Chesmore, E David (2001). “Application of time domain signal coding and archecktificial neural networks to passive acoustical identification of animals”. In: Applied Acoustics 62.12, pp. 1359–1374.
+Chesmore, E David (2001). “Application of time domain signal coding and artificial neural networks to passive acoustical identification of animals”. In: Applied Acoustics 62.12, pp. 1359–1374.
 }
 \keyword{CodingMatrix}
 \keyword{TDSC}

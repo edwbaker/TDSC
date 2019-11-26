@@ -16,7 +16,7 @@ tdsc.w(start, wave = NULL, window.length = NULL)
 \item{window.length}{Length of window}
 }
 \description{
-Wrapper function for TDSC analysis that is compatible with the windowing function
+Wrapper function for TDSC analysis that is compatable with the windowing function
 of the package sonicscrewdriver.
 }
 \examples{

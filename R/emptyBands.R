@@ -1,6 +1,6 @@
 #' Empty Bands Discovery
 #'
-#' Identifies unused codes across multiple S-matricies. Unused bands can be used to reduce the codebook as in Stammers (2011).
+#' Identifies unused codes across multiple S-matrices. Unused bands can be used to reduce the codebook as in Stammers (2011).
 #' 
 #' @param ... Two or more TDSC objects
 #' @keywords TDSC

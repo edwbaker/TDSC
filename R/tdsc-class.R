@@ -1,4 +1,4 @@
-#' An S4 class to hold resuts from TDSC
+#' An S4 class to hold results from TDSC
 #'
 #' @slot raw Two column vector of Durations and Shapes
 #' @slot codelist Vector of sequential epoch codings

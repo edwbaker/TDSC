@@ -3,9 +3,9 @@
 \docType{class}
 \name{tdsc-class}
 \alias{tdsc-class}
-\title{An S4 class to hold resuts from TDSC}
+\title{An S4 class to hold results from TDSC}
 \description{
-An S4 class to hold resuts from TDSC
+An S4 class to hold results from TDSC
 }
 \section{Slots}{
 

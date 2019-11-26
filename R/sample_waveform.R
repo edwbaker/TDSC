@@ -1,11 +1,11 @@
 #' Visualise sampled waveforms
 #'
-#' Function to genertate images of sampled waveforms with shapes analysed by Time Domain Signal Coding.
+#' Function to generate images of sampled waveforms with shapes analysed by Time Domain Signal Coding.
 #' 
 #' @param samples The number of samples
 #' @param fig_max_samples When constructing multiple figures this parameter can be used to ensure the plots are of the same size and are aligned
 #' @param start_zero If TRUE the waveform starts at zero, if FALSE the zero crossings are between samples
-#' @param invert If TRUE the shapes are positive with positive minima, if FALSE shapes are neagtive with negative maxima
+#' @param invert If TRUE the shapes are positive with positive minima, if FALSE shapes are negative with negative maxima
 #' @param tdsc_shapes If TRUE the shapes correspond to TDSC shapes, if FALSE they resemble sampled sine waves
 #' @param limit_y If TRUE the shape fills the plot, if FALSE the complete range of the y axis is plotted (-1 to 1).
 #' @param ... Further arguments to pass to plot.
