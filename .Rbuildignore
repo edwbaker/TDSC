@@ -8,3 +8,5 @@ CODE-OF-CONDUCT.md
 README.md
 .covrignore
 ^revdep$
+^CRAN-RELEASE$
+^cran-comments\.md$
