@@ -11,7 +11,7 @@
 #' @keywords TDSC
 #' @export
 #' @examples
-#' \dontrun{}
+#' \dontrun{
 #' library(tuneR)
 #' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 #' t <- tdsc(wave)
