@@ -18,4 +18,5 @@ Suggests:
     covr,
     testthat,
     devtools,
-    GA
+    GA,
+    sonicscrewdriver
