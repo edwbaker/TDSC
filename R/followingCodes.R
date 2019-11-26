@@ -11,12 +11,13 @@
 #' @keywords TDSC
 #' @export
 #' @examples
+#' \dontrun{}
 #' library(tuneR)
 #' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 #' t <- tdsc(wave)
 #' followingCodes(t)
 #' followingCodes(t, colourCode=2,plot="alluvial")
-#' 
+#' }
 followingCodes <- function (tdsc, 
                              depth=2, 
                              min_code=0, 

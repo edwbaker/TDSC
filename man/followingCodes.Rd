@@ -23,12 +23,4 @@ followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
 \description{
 Identifies sequences of codes that follow each other from time domain signal analysis, and optionally plots them as a Sankey diagram.
 }
-\examples{
-library(tuneR)
-wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
-t <- tdsc(wave)
-followingCodes(t)
-followingCodes(t, colourCode=2,plot="alluvial")
-
-}
 \keyword{TDSC}
