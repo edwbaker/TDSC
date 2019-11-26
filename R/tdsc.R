@@ -16,6 +16,7 @@
 #' library(tuneR)
 #' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 #' t <- tdsc(wave)
+#' t <- tdsc(wave, lag=2, max_D=10)
 
 
 tdsc <- function(
