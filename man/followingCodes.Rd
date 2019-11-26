@@ -5,7 +5,7 @@
 \title{Following Codes}
 \usage{
 followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
-  plot = F)
+  colourCode = 1, plot = F)
 }
 \arguments{
 \item{tdsc}{A TDSC object}
@@ -15,6 +15,8 @@ followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
 \item{min_code}{The minimum value of code to include in sequence}
 
 \item{max_code}{The maximum value of code to include in sequence}
+
+\item{colourCode}{If plot is alluvial, colour all codes following this code}
 
 \item{plot}{If "alluvial" plots the found sequences in a river plot}
 }
@@ -26,6 +28,7 @@ library(tuneR)
 wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 t <- tdsc(wave)
 followingCodes(t)
+followingCodes(t, colourCode=2,plot="alluvial")
 
 }
 \keyword{TDSC}
