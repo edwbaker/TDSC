@@ -2,7 +2,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 LICENSE
-CODE_OF_CONDUCT.md
+CODE-OF-CONDUCT.md
 ^.*\.DS_Store$
 ^\.travis\.yml$
 README.md
