@@ -3,6 +3,7 @@
 export(c2dmatrix)
 export(emptyBands)
 export(followingCodes)
+export(normalise.a.matrix)
 export(sample_waveform)
 export(tdsc)
 export(tdsc.plot)
