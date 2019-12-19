@@ -4,12 +4,14 @@
 \alias{tdsc.plot}
 \title{Plot the A matrix or S Matrix}
 \usage{
-tdsc.plot(td, plotter = "persp")
+tdsc.plot(td, plotter = "persp", ...)
 }
 \arguments{
 \item{td}{A TDSC object}
 
 \item{plotter}{Function used to plot the A matrix (persp or perp3D)  or S matrix (hist)}
+
+\item{...}{Parameters to pass to plotting function}
 }
 \description{
 Plot the A matrix or S Matrix from a tdsc analysis.

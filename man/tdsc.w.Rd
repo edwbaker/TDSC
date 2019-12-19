@@ -2,7 +2,7 @@
 % Please edit documentation in R/tdsc.w.R
 \name{tdsc.w}
 \alias{tdsc.w}
-\title{TDSC analysis comaptible with windowing}
+\title{TDSC analysis compatible with windowing}
 \usage{
 tdsc.w(start, wave = NULL, window.length = NULL)
 
@@ -16,7 +16,7 @@ tdsc.w(start, wave = NULL, window.length = NULL)
 \item{window.length}{Length of window}
 }
 \description{
-Wrapper function for TDSC analysis that is compatable with the windowing function
+Wrapper function for TDSC analysis that is compatible with the windowing function
 of the package sonicscrewdriver.
 }
 \examples{

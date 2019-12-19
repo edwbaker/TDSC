@@ -5,7 +5,7 @@
 \title{Following Codes}
 \usage{
 followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
-  colourCode = 1, plot = F)
+  colourCode = 1, plot = F, ...)
 }
 \arguments{
 \item{tdsc}{A TDSC object}
@@ -19,6 +19,8 @@ followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
 \item{colourCode}{If plot is alluvial, colour all codes following this code}
 
 \item{plot}{If "alluvial" plots the found sequences in a river plot}
+
+\item{...}{Arguments to pass to the plotting function}
 }
 \description{
 Identifies sequences of codes that follow each other from time domain signal analysis, and optionally plots them as a Sankey diagram.
