@@ -1,14 +1,15 @@
-#' Plot the A matrix
+#' Plot the A matrix or S Matrix
 #'
-#' Plot the A matrix from a tdsc analysis.
+#' Plot the A matrix or S Matrix from a tdsc analysis.
 #'
 #' @param td A TDSC object
-#' @param plotter Function used to plot the A matrix (persp or perp3D)
+#' @param plotter Function used to plot the A matrix (persp or perp3D)  or S matrix (hist)
 #' @export
 #' @examples
 #' \dontrun{
 #' tdsc.plot(td)
 #' tdsc.plot(td, plotter="persp3D")
+#' tdsc.plot(td, plotter="hist")
 #' }
 #'
 tdsc.plot <- function(
@@ -21,13 +22,28 @@ tdsc.plot <- function(
   if (plotter=="persp3D") {
     plot.a.persp3D(td)
   }
+  if (plotter=="hist") {
+    plot.s.hist(td)
+  }
 }
 
 plot.a.persp <- function(td) {
-  graphics::persp(td@a_matrix)
+  graphics::persp(td@a_matrix,
+                  theta = 30, phi = 20,
+                  xlab="Code", ylab="Lagged Code", zlab=""
+                  )
 }
 
 plot.a.persp3D <- function(td) {
   package.installed("GA")
-  GA::persp3D(x=1:nrow(td@a_matrix),y=1:ncol(td@a_matrix),z=td@a_matrix)
+  GA::persp3D(x=1:nrow(td@a_matrix),y=1:ncol(td@a_matrix),z=td@a_matrix,
+                     xlab="Code", ylab="Lagged Code", zlab=""
+                     )
+}
+
+plot.s.hist <- function(td) {
+  graphics::hist(td@codelist,
+       xlab="Code",
+       main=""
+       )
 }

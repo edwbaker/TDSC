@@ -2,22 +2,23 @@
 % Please edit documentation in R/plot.R
 \name{tdsc.plot}
 \alias{tdsc.plot}
-\title{Plot the A matrix}
+\title{Plot the A matrix or S Matrix}
 \usage{
 tdsc.plot(td, plotter = "persp")
 }
 \arguments{
 \item{td}{A TDSC object}
 
-\item{plotter}{Function used to plot the A matrix (persp or perp3D)}
+\item{plotter}{Function used to plot the A matrix (persp or perp3D)  or S matrix (hist)}
 }
 \description{
-Plot the A matrix from a tdsc analysis.
+Plot the A matrix or S Matrix from a tdsc analysis.
 }
 \examples{
 \dontrun{
 tdsc.plot(td)
 tdsc.plot(td, plotter="persp3D")
+tdsc.plot(td, plotter="hist")
 }
 
 }
