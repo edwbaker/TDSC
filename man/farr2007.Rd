@@ -4,7 +4,9 @@
 \name{farr2007}
 \alias{farr2007}
 \title{Coding Matrix from Farr (2007)}
-\format{Matrix}
+\format{
+Matrix
+}
 \usage{
 data(farr2007)
 }

@@ -4,9 +4,15 @@
 \alias{sample_waveform}
 \title{Visualise sampled waveforms}
 \usage{
-sample_waveform(samples = 3, fig_max_samples = NULL,
-  start_zero = TRUE, invert = FALSE, tdsc_shapes = FALSE,
-  limit_y = TRUE, ...)
+sample_waveform(
+  samples = 3,
+  fig_max_samples = NULL,
+  start_zero = TRUE,
+  invert = FALSE,
+  tdsc_shapes = FALSE,
+  limit_y = TRUE,
+  ...
+)
 }
 \arguments{
 \item{samples}{The number of samples}

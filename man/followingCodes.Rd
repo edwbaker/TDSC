@@ -4,8 +4,15 @@
 \alias{followingCodes}
 \title{Following Codes}
 \usage{
-followingCodes(tdsc, depth = 2, min_code = 0, max_code = 10,
-  colourCode = 1, plot = F, ...)
+followingCodes(
+  tdsc,
+  depth = 2,
+  min_code = 0,
+  max_code = 10,
+  colourCode = 1,
+  plot = F,
+  ...
+)
 }
 \arguments{
 \item{tdsc}{A TDSC object}

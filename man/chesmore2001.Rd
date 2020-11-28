@@ -4,7 +4,9 @@
 \name{chesmore2001}
 \alias{chesmore2001}
 \title{Coding Matrix from Chesmore (2001)}
-\format{Matrix}
+\format{
+Matrix
+}
 \source{
 \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
 }
