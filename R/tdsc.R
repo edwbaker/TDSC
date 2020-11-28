@@ -104,7 +104,7 @@ tdsc <- function(
   }
 
   #Create vector for storing the codes of epochs
-  if (length(zc) < 1) return(NULL)
+  if (length(zc) < 2) return(NULL)
   v_length <- length(zc)-1
   D_list <-vector(mode="integer", length=v_length)
   S_list <-vector(mode="integer", length=v_length)
