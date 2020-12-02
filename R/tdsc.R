@@ -153,7 +153,8 @@ tdsc <- function(
   #Create the A-matrix
   a_matrix <- matrix(data=0, nrow=max_code, ncol=max_code)
   #Populate the A-matrix
-  for (i in 1:(length(code)-lag)) {
+
+  for (i in 1:seq_along(length(code)-lag)) {
     if (!is.na(code[i])
         & !is.na(code[i+lag])
         & code[i] < max_code
