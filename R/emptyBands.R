@@ -1,7 +1,7 @@
 #' Empty Bands Discovery
 #'
 #' Identifies unused codes across multiple S-matrices. Unused bands can be used to reduce the codebook as in Stammers (2011).
-#' 
+#'
 #' @param ... Two or more TDSC objects
 #' @keywords TDSC
 #' @references Stammers (2011) “Audio Event Classification for Urban Soundscape Analysis”. PhD thesis. University of York.
@@ -11,7 +11,7 @@
 #' wave <- readWave(system.file("extdata", "1.wav", package="tdsc"))
 #' t <- tdsc(wave)
 #' emptyBands(t,t)
-#' 
+#'
 emptyBands <- function(...) {
   input <- list(...)
   if (length(input) < 2) {
@@ -20,7 +20,7 @@ emptyBands <- function(...) {
   x <- c()
   y <- c()
   for (i in 1:length(input)) {
-    if (typeof(input[[i]]) != "S4" | class(input[[i]]) != "tdsc") {
+    if (!inherits(input[[i]], "tdsc")) {
       stop("Inputs to emptyBands must be TDSC objects.")
     }
     s_matrix <- input[[i]]@s_matrix

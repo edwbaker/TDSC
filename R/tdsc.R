@@ -26,7 +26,7 @@ tdsc <- function(
   plot=FALSE,
   max_D=25L
 ) {
-  if (typeof(wave) != "S4" | class(wave) != "Wave") {
+  if (!inherits(wave, "Wave")) {
     stop("wave must be a Wave object")
   }
   if (!is.numeric(lag) | !(lag == as.integer(lag))) {
