@@ -12,6 +12,8 @@ An S4 class to hold results from TDSC
 \describe{
 \item{\code{raw}}{Two column vector of Durations and Shapes}
 
+\item{\code{positive}}{Identify non-negative sections}
+
 \item{\code{codelist}}{Vector of sequential epoch codings}
 
 \item{\code{b_matrix}}{The basic matrix}

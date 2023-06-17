@@ -1,6 +1,7 @@
 #' An S4 class to hold results from TDSC
 #'
 #' @slot raw Two column vector of Durations and Shapes
+#' @slot positive Identify non-negative sections
 #' @slot codelist Vector of sequential epoch codings
 #' @slot b_matrix The basic matrix
 #' @slot c_matrix The coding matrix
@@ -9,10 +10,10 @@
 #' @slot sample_count The number of samples in the waveform
 #' @slot epoch_count The number of identified epochs
 #' @slot stdsc Statistical TDSC feature vector
-#' 
+#'
 #' @export
-#' 
-setClass("tdsc", 
+#'
+setClass("tdsc",
          slots=list(
            raw="matrix",
            positive="numeric",
