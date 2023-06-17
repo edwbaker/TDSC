@@ -1,3 +1,6 @@
+# tdsc 1.0.4
+*   Meet new CRAN coding standards. 
+
 # tdsc 1.0.3
 *   Allow passing of arguments to plotting functions via tdsc.plot
 
