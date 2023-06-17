@@ -10,3 +10,4 @@ README.md
 ^revdep$
 ^CRAN-RELEASE$
 ^cran-comments\.md$
+^CRAN-SUBMISSION$
