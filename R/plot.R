@@ -13,23 +13,23 @@
 #' tdsc.plot(td, plotter="hist")
 #' }
 #'
-tdsc.plot <- function(
+tdsc_plot <- function(
    td,
    plotter="persp",
    ...
 ){
   if (plotter=="persp") {
-    plot.a.persp(td, ...)
+    plot_a_persp(td, ...)
   }
   if (plotter=="persp3D") {
-    plot.a.persp3D(td, ...)
+    plot_a_persp3D(td, ...)
   }
   if (plotter=="hist") {
-    plot.s.hist(td, ...)
+    plot_s_hist(td, ...)
   }
 }
 
-plot.a.persp <- function(td, ...) {
+plot_a_persp <- function(td, ...) {
   graphics::persp(td@a_matrix,
                   theta = 30, phi = 20,
                   xlab="Code", ylab="Lagged Code", zlab="",
@@ -37,7 +37,7 @@ plot.a.persp <- function(td, ...) {
                   )
 }
 
-plot.a.persp3D <- function(td, ...) {
+plot_a_persp3D <- function(td, ...) {
   package.installed("GA")
   GA::persp3D(x=1:nrow(td@a_matrix),y=1:ncol(td@a_matrix),z=td@a_matrix,
                      xlab="Code", ylab="Lagged Code", zlab="",
@@ -45,7 +45,7 @@ plot.a.persp3D <- function(td, ...) {
                      )
 }
 
-plot.s.hist <- function(td, ...) {
+plot_s_hist <- function(td, ...) {
   graphics::hist(td@codelist,
        xlab="Code",
        main="",
