@@ -2,23 +2,23 @@
 
 ## All functions
 
-- [`c2dmatrix()`](http://ebaker.me.uk/TDSC/reference/c2dmatrix.md) :
+- [`c2dmatrix()`](http://tdsc.ebaker.me.uk/reference/c2dmatrix.md) :
   Convert a coding matrix to a distributed matrix
-- [`chesmore2001`](http://ebaker.me.uk/TDSC/reference/chesmore2001.md) :
+- [`chesmore2001`](http://tdsc.ebaker.me.uk/reference/chesmore2001.md) :
   Coding Matrix from Chesmore (2001)
-- [`emptyBands()`](http://ebaker.me.uk/TDSC/reference/emptyBands.md) :
+- [`emptyBands()`](http://tdsc.ebaker.me.uk/reference/emptyBands.md) :
   Empty Bands Discovery
-- [`farr2007`](http://ebaker.me.uk/TDSC/reference/farr2007.md) : Coding
+- [`farr2007`](http://tdsc.ebaker.me.uk/reference/farr2007.md) : Coding
   Matrix from Farr (2007)
-- [`followingCodes()`](http://ebaker.me.uk/TDSC/reference/followingCodes.md)
+- [`followingCodes()`](http://tdsc.ebaker.me.uk/reference/followingCodes.md)
   : Following Codes
-- [`normalise.a.matrix()`](http://ebaker.me.uk/TDSC/reference/normalise.a.matrix.md)
+- [`normalise.a.matrix()`](http://tdsc.ebaker.me.uk/reference/normalise.a.matrix.md)
   : Normalise an A Matrix
-- [`sample_waveform()`](http://ebaker.me.uk/TDSC/reference/sample_waveform.md)
+- [`sample_waveform()`](http://tdsc.ebaker.me.uk/reference/sample_waveform.md)
   : Visualise sampled waveforms
-- [`tdsc-class`](http://ebaker.me.uk/TDSC/reference/tdsc-class.md) : An
+- [`tdsc-class`](http://tdsc.ebaker.me.uk/reference/tdsc-class.md) : An
   S4 class to hold results from TDSC
-- [`tdsc()`](http://ebaker.me.uk/TDSC/reference/tdsc.md) : Time Domain
+- [`tdsc()`](http://tdsc.ebaker.me.uk/reference/tdsc.md) : Time Domain
   Signal Coding
-- [`tdsc_plot()`](http://ebaker.me.uk/TDSC/reference/tdsc_plot.md) :
+- [`tdsc_plot()`](http://tdsc.ebaker.me.uk/reference/tdsc_plot.md) :
   Plot the A matrix or S Matrix

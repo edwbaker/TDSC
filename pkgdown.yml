@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-12-25T12:54Z
+last_built: 2025-12-25T13:06Z
 urls:
-  reference: http://ebaker.me.uk/TDSC/reference
-  article: http://ebaker.me.uk/TDSC/articles
+  reference: http://tdsc.ebaker.me.uk/reference
+  article: http://tdsc.ebaker.me.uk/articles

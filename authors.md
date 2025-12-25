@@ -7,13 +7,16 @@
 
 ## Citation
 
+Source:
+[`DESCRIPTION`](https://github.com/edwbaker/tdsc/blob/master/DESCRIPTION)
+
 Baker E (2025). *tdsc: Time Domain Signal Coding*. R package version
-1.0.4, <http://ebaker.me.uk/TDSC/>.
+1.0.4, <http://tdsc.ebaker.me.uk>.
 
     @Manual{,
       title = {tdsc: Time Domain Signal Coding},
       author = {Ed Baker},
       year = {2025},
       note = {R package version 1.0.4},
-      url = {http://ebaker.me.uk/TDSC/},
+      url = {http://tdsc.ebaker.me.uk},
     }
