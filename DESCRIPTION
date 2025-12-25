@@ -8,7 +8,7 @@ License: GPL-3
 Language: en-GB
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.3
 Imports:
   data.table,
   methods,
@@ -21,4 +21,7 @@ Suggests:
     devtools,
     GA,
     sonicscrewdriver
-URL: http://ebaker.me.uk/TDSC/
+URL:
+    http://tdsc.ebaker.me.uk,
+    https://github.com/edwbaker/tdsc
+Roxygen: list(markdown = TRUE)
