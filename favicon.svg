@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"><svg viewBox="0 0 200 200" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Hexagon -->
+  <polygon points="100,10 180,55 180,145 100,190 20,145 20,55" fill="#0F172A" stroke="#38BDF8" stroke-width="4"></polygon>
+
+  <!-- Matrix grid -->
+  <g stroke="#334155" stroke-width="1">
+    <!-- vertical -->
+    <line x1="55" y1="60" x2="55" y2="140"></line>
+    <line x1="75" y1="60" x2="75" y2="140"></line>
+    <line x1="95" y1="60" x2="95" y2="140"></line>
+    <line x1="115" y1="60" x2="115" y2="140"></line>
+    <line x1="135" y1="60" x2="135" y2="140"></line>
+    <!-- horizontal -->
+    <line x1="45" y1="70" x2="155" y2="70"></line>
+    <line x1="45" y1="90" x2="155" y2="90"></line>
+    <line x1="45" y1="110" x2="155" y2="110"></line>
+    <line x1="45" y1="130" x2="155" y2="130"></line>
+  </g>
+
+  <!-- Sound wave -->
+  <path d="M40,100
+           C55,70 70,130 85,100
+           S115,70 130,100
+           S160,130 175,100" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"></path>
+
+  <!-- Text -->
+  <text x="100" y="165" font-family="Inter, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#E5E7EB">
+    TDSC
+  </text>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
